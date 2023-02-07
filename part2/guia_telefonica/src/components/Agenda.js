@@ -7,7 +7,7 @@ const Agenda = ({ agenda , filter}) => {
         </>)
     }
     return (<>
-        {agenda.map(nombre => (<pre key={nombre.name}> {nombre.name} {nombre.phone}</pre>))}
+        {agenda.map(nombre => (<pre key={nombre.name}> {nombre.name} {nombre.number}</pre>))}
     </>)
 }
 export default Agenda
