@@ -1,6 +1,6 @@
-import axios from 'axios'
+
 const InfoPais = (props) => {
-    console.log(props.paises.name.common)
+    const idiomas=Object.values(props.paises.languages)
     return (
         <>
             <h1>{props.paises.name.common}</h1>
@@ -9,7 +9,7 @@ const InfoPais = (props) => {
             </p>
             <h3>languages</h3>
             <ul>
-
+                {idiomas.map(idioma=> <li key={idioma}>{idioma}</li>)}
             </ul>
             <img src={props.paises.flags.png}></img>
         </>

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Searching search={search} setSearch={setSearch}/>
-    <Paises paises={paises} setPaises={setPaises} search={search}/>
+    <Paises paises={paises} setPaises={setPaises} search={search} setSearch={setSearch}/>
     </>
   );
 }
