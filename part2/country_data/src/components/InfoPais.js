@@ -1,19 +1,19 @@
 import axios from 'axios'
-const InfoPais = ({ pais }) => {
-    debugger
-    console.log(pais);
+const InfoPais = (props) => {
+    console.log(props.paises.name.common)
     return (
-    <div>
-        <h1>{pais.name.common}</h1>
-        <p> capital {pais.capital[0]}
-        population {pais.population}
-        </p>
-        <h3>languages</h3>
-        <ul>
-           
-        </ul>
-        <img>{pais.flags.png}</img>
-    </div>
+        <>
+            <h1>{props.paises.name.common}</h1>
+            <p> capital {props.paises.capital[0]} <br></br>
+                population {props.paises.population}
+            </p>
+            <h3>languages</h3>
+            <ul>
+
+            </ul>
+            <img src={props.paises.flags.png}></img>
+        </>
+
     )
 }
 export default InfoPais

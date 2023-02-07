@@ -12,7 +12,6 @@ const Paises = ({ paises, setPaises, search }) => {
             </div>
         )
     } else if (paises.length === 1){
-        console.log(paises[0]);
         return <InfoPais paises={paises[0]}/>
     }
     return (
