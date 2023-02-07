@@ -1,6 +1,6 @@
-const Searching = ({search, setNewSearch}) => {
-    const handleNewSearch = ({value}) => {
-        setNewSearch(value)
+const Searching = ({search, setSearch}) => {
+    const handleNewSearch = (event) => {
+        setSearch(event.target.value)
     }
     return ( 
     <div>
