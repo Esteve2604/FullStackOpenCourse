@@ -13,7 +13,7 @@ const Hello = (props) => {
 
 const App = () => {
   const [value, setValue] = useState(10)
-  
+  console.log(process.env.REACT_APP_API_KEY);
   const setToValue = (newValue) => () => {
     setValue(newValue)
   }
