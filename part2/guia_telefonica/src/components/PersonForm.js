@@ -27,8 +27,7 @@ const PersonForm = ({ newName, setNewName, newPhone,
                     returnedper => {
                         succeded(returnedper)
                         return setPersons(persons.map(persona => returnedper.id === persona.id ? returnedper : persona))
-                    }).catch(
-                        error(newName)
+                    }).catch(errores=> error(newName)
                     )
 
         }

@@ -10,7 +10,6 @@ const successNotification = ({successMessage}) => {
     )
   }
   const errorNotification = ({errorMessage}) => {
-    console.log(errorMessage)
     if (errorMessage === null) {
       return null
     }
